@@ -1,4 +1,4 @@
-package synthax
+package main
 
 import "fmt"
 
