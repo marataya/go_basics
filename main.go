@@ -2,26 +2,53 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
-type Flags int
+func swapVals(a, b int) (x, y int) {
+	y, x = a, b
+	return
+}
+func Min(a int, b ...int) int {
+	if len(b) == 0 {
+		return a
+	}
+	min := a
+	for _, v := range b {
+		if v < min {
+			min = v
+		}
+	}
+	return min
+}
 
-const (
-	FlagUp Flags = 1 << iota
-	FlagBroadcast
-	FlagLoopback
-	FlagPointToPoint
-)
+// use of interface{}
+func typecheck(values ...interface{}) {
+	for _, value := range values {
+		switch value.(type) {
+		case int:
+			fmt.Println("int")
+		case float64:
+			fmt.Println("float")
+		case string:
+			fmt.Println("string")
+		case bool:
+			fmt.Println("bool")
+		default:
+			fmt.Println("default")
+		}
+	}
+}
+func Multiply(a, b int, reply *int) {
+	*reply = a * b
+}
 
 func main() {
-	var td time.Duration
-	t0 := time.Now()
-	c := 0
-	for i := 0; i < 1000; i++ {
-		c++
-	}
-	t1 := time.Now()
-	td = t1.Sub(t0)
-	fmt.Println(td)
+	fmt.Println(swapVals(7, 96))
+	fmt.Println(Min(7, 5, 8, 8, 3, 99))
+	n := 0
+	reply := &n
+	Multiply(10, 5, reply)
+	fmt.Println("Multiply: ", *reply)
+	fmt.Println(n)
+	typecheck(1, 5, "aha")
 }

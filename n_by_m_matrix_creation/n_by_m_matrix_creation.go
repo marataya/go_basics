@@ -1,4 +1,4 @@
-package main
+package n_by_m_matrix_creation
 
 import "fmt"
 
@@ -27,4 +27,5 @@ func test1(rows, cols int) {
 func main() {
 	test1(5, 4)
 	test1(10, 10)
+	test1(100, 100)
 }
