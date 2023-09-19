@@ -1,7 +1,7 @@
 package main
 
-import "go_basics/functions"
+import "go_basics/maps"
 
 func main() {
-	functions.Run()
+	maps.Run()
 }
