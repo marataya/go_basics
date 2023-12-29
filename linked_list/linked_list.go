@@ -1,4 +1,4 @@
-package main
+package linked_list
 
 import "fmt"
 
@@ -25,7 +25,7 @@ func (l *List[t]) Print() {
 	}
 }
 
-func main() {
+func Run() {
 	list := &List[int]{val: 1}
 	list.Push(2)
 	list.Push(3)

@@ -1,10 +1,10 @@
-package main
+package summator
 
 import (
 	"fmt"
 )
 
-func main() {
+func Run() {
 	var n int
 	var result []int
 	fmt.Scanf("%d", &n)

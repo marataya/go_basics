@@ -1,4 +1,4 @@
-package main
+package generics
 
 import "fmt"
 
@@ -21,7 +21,7 @@ func foo[T, U any](val1 T, val2 U) {
 	fmt.Println(val1, val2)
 }
 
-func main() {
+func Run() {
 	cm := NewCustomMap[string, int]()
 	cm.Insert("abc", 5)
 	cm.Insert("d", 7)

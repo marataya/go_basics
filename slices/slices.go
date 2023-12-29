@@ -43,7 +43,7 @@ func StringReverse(s string) (res string) {
 	}
 	return
 }
-func Run() {
+func RunEx1() {
 	var b = []byte{'g', 'o', 'l', 'a', 'n', 'g'}
 	fmt.Println(b[:2])
 	fmt.Println(b[2:])

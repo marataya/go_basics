@@ -1,11 +1,11 @@
-package main
+package using_tempconv
 
 import (
 	"fmt"
 	"go_basics/tempconv"
 )
 
-func main() {
+func Run() {
 	fmt.Println(tempconv.CToF(tempconv.BoilingC))
 	fmt.Println(tempconv.CToF(tempconv.FreezingC))
 }

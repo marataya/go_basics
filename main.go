@@ -1,7 +1,7 @@
 package main
 
-import "go_basics/maps"
+import "go_basics/replace_str_in_file"
 
 func main() {
-	maps.Run()
+	replace_str_in_file.Run()
 }

@@ -1,4 +1,4 @@
-package main
+package aggregate_costs
 
 import "fmt"
 
@@ -27,7 +27,7 @@ func getCostsByDay(costs []cost) []float64 {
 	return costsByDay
 }
 
-func main() {
+func Run() {
 	costs := []cost{
 		{0, 4.0},
 		{1, 2.1},
@@ -37,3 +37,4 @@ func main() {
 
 	fmt.Println(getCostsByDay(costs))
 }
+

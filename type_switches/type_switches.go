@@ -72,7 +72,7 @@ func test(e expense) {
 	}
 }
 
-func main() {
+func Run() {
 	test(email{
 		isSubscribed: true,
 		body:         "hello there",

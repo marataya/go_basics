@@ -24,7 +24,7 @@ func test1(rows, cols int) {
 	fmt.Println("======= END REPORT =======")
 }
 
-func main() {
+func Run() {
 	test1(5, 4)
 	test1(10, 10)
 	test1(100, 100)
