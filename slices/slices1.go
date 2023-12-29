@@ -1,8 +1,8 @@
-package main
+package slices
 
 import "fmt"
 
-func main() {
+func RunEx2() {
 	a := make([]int, 3)
 
 	fmt.Println("a: ", a)

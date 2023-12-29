@@ -1,4 +1,4 @@
-package main
+package toposort
 
 import (
 	"fmt"
@@ -27,7 +27,7 @@ var prereqs = map[string][]string{
 	"programming languages": {"data structures", "computer organization"},
 }
 
-func main() {
+func Run() {
 	for i, course := range topoSort(prereqs) {
 		fmt.Printf("%d: \t%s\n", i+1, course)
 	}

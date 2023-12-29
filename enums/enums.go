@@ -1,4 +1,4 @@
-package main
+package enums
 
 import "fmt"
 
@@ -35,8 +35,9 @@ func getDamage(wt WeaponType) int {
 	}
 }
 
-func main() {
+func Run() {
 	fmt.Printf("Damage of weapon %s is %d\n", Axe, getDamage(Axe))
 	fmt.Printf("Damage of weapon %s is %d\n", Sword, getDamage(Sword))
 	fmt.Printf("Damage of weapon %s is %d\n", WoodenStick, getDamage(WoodenStick))
 }
+

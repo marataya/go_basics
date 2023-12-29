@@ -1,7 +1,9 @@
 package main
 
-import "go_basics/maps"
+import (
+	"go_basics/aggregate_costs"
+)
 
 func main() {
-	maps.Run()
+	aggregate_costs.Run()
 }

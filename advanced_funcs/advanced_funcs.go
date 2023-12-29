@@ -1,4 +1,4 @@
-package main
+package advanced_funcs
 
 import "fmt"
 
@@ -21,7 +21,7 @@ func selfMath(mathFunc func(int, int) int) func(int) int {
 	}
 }
 
-func main() {
+func Run() {
 	fmt.Println(aggregate(2, 3, 4, add))
 	fmt.Println(aggregate(2, 3, 4, mult))
 	squareFunc := selfMath(mult)
