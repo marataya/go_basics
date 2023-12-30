@@ -1,7 +1,9 @@
 package main
 
-import "go_basics/replace_str_in_file"
+import (
+	"go_basics/find_top_3_most_popular_words"
+)
 
 func main() {
-	replace_str_in_file.Run()
+	find_top_3_most_popular_words.Run()
 }

@@ -1,0 +1,5 @@
+I'm a fresh graduate from a master of science with a bachelor’s degree in Computing Science and a master's in Interdisciplinary major, focusing on machine learning using knowledge graphs.
+
+I had a great experience using different Linux distributions, databases, SQL/ NoSQL (MongoDB), webservers (Nginx and ...) Docker, k8s, a lot of experience with python and flask micro web framework, private/public clouds
+
+I'm a fresh graduate from a master of science with a bachelor’s degree in Computing Science and a master's in Interdisciplinary major, focusing on machine learning using knowledge graphs.
